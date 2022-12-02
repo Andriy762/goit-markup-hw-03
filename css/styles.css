@@ -22,8 +22,57 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
 }
-.hero-nav {
+
+/*Container*/
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.container-header{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    }
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+
+/*--це для забрання відстаней між секціями
+•section.no-padding {
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+*/
+.hero-nav{
     background-color: var(--color-hero-nav);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
 }
 .header-logo-link {
     color: var(--color-header-logo-link);
@@ -32,6 +81,7 @@ body {
     line-height: 1.192;
     letter-spacing: 0.03em;
     text-decoration: none;
+    
 }
 .header-logo {
     color: var(--color-logo);
@@ -47,6 +97,7 @@ body {
     font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.02em;
+    cursor: pointer;
 }
 .header-link-blue {
     color: var(--color-third);
@@ -55,9 +106,15 @@ body {
     font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.02em;
+    cursor: pointer;
 }
 .header-links {
     color: var(--color-secondary);
+
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
 }
 .header-link:hover,
 .header-link:focus {
@@ -70,28 +127,41 @@ body {
 
 .hero-section {
     background-color: var(--color-hero-section);
+    text-align: center;
+    margin-bottom: 97px;
+
+    margin-top: 0%;
 }
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
     color: var(--color-hero-title);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.363;
-    text-align: center;
+    
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 .hero-button {
     font-family: 'Roboto','sans-serif';
     font-style: normal;
+
     background: var(--color-button);
     color: var(--color-primary-white);
+
     cursor: pointer;
     font-weight: 700px;
     font-size: 16px;
     line-height: 1.875;
-    border-radius: 4px;
+
+    
     text-align: center;
     letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 24px; 
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -120,6 +190,9 @@ body {
     line-height: 1.142;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    padding-bottom: 10px;
+
+    margin-bottom: 10px;
 }
 
 
@@ -144,6 +217,8 @@ body {
     font-size: 36px;
     line-height: 1.171;
     letter-spacing: 0.03em;
+
+    padding-top: 50px;
 }
 
 .section-title-igor {
@@ -154,6 +229,8 @@ body {
     line-height: 1.187;
     text-align: center;
     letter-spacing: 0.03em;
+
+    padding-top: 10px;
 }
 .section-text-pd {
     color: var(--color-secondary);
@@ -172,6 +249,8 @@ body {
     line-height: 1.187;
     text-align: center;
     letter-spacing: 0.03em;
+
+    padding-top: 10px;
 }
 .section-text-fd {
     color: var(--color-secondary);
@@ -190,6 +269,8 @@ body {
     line-height: 1.187;
     text-align: center;
     letter-spacing: 0.03em;
+
+    padding-top: 10px;
 }
 .section-text-m {
     color: var(--color-secondary);
@@ -208,6 +289,8 @@ body {
     line-height: 1.187;
     text-align: center;
     letter-spacing: 0.03em;
+
+    padding-top: 10px;
 }
 .section-text-d {
     color: var(--color-secondary);
@@ -250,9 +333,7 @@ body {
 .footer-link-address:hover {
     color: var(--color-header-logo-link);
 }
-.list {
-    list-style: none;
-}
+
 
 .button {
     background-color: var(--color-bg);
